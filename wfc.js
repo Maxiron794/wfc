@@ -35,7 +35,7 @@ class Rules{
     }
 }
 
-const pieces = []
+// const pieces = []
 
 blocks =  [
     "0","0", "0", "0", "0", "0", "0",
