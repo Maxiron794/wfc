@@ -122,6 +122,7 @@ blocks =  [
 learngrid = Grid.from_list(7, blocks)
 
 console.log(learngrid)
+console.log(Grid.learn(learngrid))
 
 function same(array1, array2){
     let array = []
