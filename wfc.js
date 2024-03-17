@@ -5,7 +5,7 @@ class Grid{
         
         this.blocks = []
 
-        for(let y = 0; y < width; y++){
+        for(let y = 0; y < height; y++){
             this.blocks[y] = [y]
         }
     }
