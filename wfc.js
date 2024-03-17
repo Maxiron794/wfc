@@ -47,3 +47,5 @@ blocks =  [
 ]
 
 learngrid = Grid.fromlist(7, blocks)
+
+console.log(learngrid)
