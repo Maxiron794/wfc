@@ -1,5 +1,5 @@
 class Grid{
-    constructor(height, width, seed=Math.seed()){
+    constructor(height, width, seed=Math.random()){
         this.height = height;
         this.width = width;
         
