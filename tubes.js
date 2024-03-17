@@ -208,8 +208,8 @@ for(let x = 0; x < columns; x++){
 
 //grid.log()
 
-grid.set(columns/2, 1, "type", 5)
-grid.set(columns/2, 1, "possible", [5])
+grid.set(columns/2, 1, "type", 8)
+grid.set(columns/2, 1, "possible", [8])
 
 function cycle(){
     grid.count_entropy();
