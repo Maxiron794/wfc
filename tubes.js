@@ -198,7 +198,7 @@ for(let x = 0; x < columns; x++){
 
 function cycle(){
     grid.count_entropy();
-    grid.log()
+    // grid.log()
     unsolved = grid.try();
     grid.draw();
     if(unsolved){
