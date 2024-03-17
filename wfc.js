@@ -18,15 +18,15 @@ class Grid{
         n=[]
         
         /*
-        y - 1 > -1 ? n.push(this.get(x, y-1)) : n.push(this.get(x, rows - 1));
-        x + 1 < columns ? n.push(this.get(x+1, y)) : n.push(this.get(0, y));
-        y + 1 < rows ? n.push(this.get(x, y+1)) : n.push(this.get(x, 0));
-        x - 1 > -1 ? n.push(this.get(x-1, y)) : n.push(this.get(columns - 1, y));
+        y - 1 > -1 ? n.push(this.get(x, y-1)) : n.push(this.get(x, this.height - 1));
+        x + 1 < this.width ? n.push(this.get(x+1, y)) : n.push(this.get(0, y));
+        y + 1 < this.height ? n.push(this.get(x, y+1)) : n.push(this.get(x, 0));
+        x - 1 > -1 ? n.push(this.get(x-1, y)) : n.push(this.get(this.width - 1, y));
         */
 
         y - 1 > -1 ? n.push(this.get(x, y-1)) : n.push(undefined);
-        x + 1 < columns ? n.push(this.get(x+1, y)) : n.push(undefined);
-        y + 1 < rows ? n.push(this.get(x, y+1)) : n.push(undefined);
+        x + 1 < this.width ? n.push(this.get(x+1, y)) : n.push(undefined);
+        y + 1 < this.height ? n.push(this.get(x, y+1)) : n.push(undefined);
         x - 1 > -1 ? n.push(this.get(x-1, y)) : n.push(undefined);
 
         return n
@@ -44,8 +44,8 @@ class Grid{
         let pieces = {}
         let rules = {}
 
-        for(let y = 0; y < rows; y++){
-            for(let x = 0; x < columns; x++){
+        for(let y = 0; y < grid.height; y++){
+            for(let x = 0; x < grid.width; x++){
                 type = grid.get(x, y)
                 if(!Object.keys(rules).includes(type)){
                     rules[type] = []
@@ -56,8 +56,8 @@ class Grid{
             }
         }
         
-        for(let y = 0; y < rows; y++){
-            for(let x = 0; x < columns; x++){
+        for(let y = 0; y < grid.height; y++){
+            for(let x = 0; x < grid.width; x++){
                 type = grid.get(x, y)
                 ns = grid.neighbours(x, y)
                 for(let t = 0; t < 4; t++){
