@@ -10,15 +10,20 @@ class Grid{
         }
     }
 
-    from_list(width, list){
+    static from_list(width, list){
+        let newgrid = new Grid(Math.floor(list.length / width), width)
         for(i = 0; i < list.length; i++){
-            this.blocks[Math.floor(i / width)][i % width]
+            newgrid.blocks[Math.floor(i / width)][i % width] = list[i];
         }
+        return newgrid
     }
 }
 
 class Piece{
-
+    constructor(data, log=undefined){
+        this.data = data
+        this.log = log
+    }
 }
 
 class Rules{
