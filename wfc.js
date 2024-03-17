@@ -46,6 +46,6 @@ blocks =  [
     "1", "0", "0", "0", "0", "0", "3"
 ]
 
-learngrid = Grid.fromlist(7, blocks)
+learngrid = Grid.from_list(7, blocks)
 
 console.log(learngrid)
