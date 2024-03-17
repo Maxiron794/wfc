@@ -5,6 +5,8 @@ class grid{
         
         this.blocks = []
 
-        for(x = 0; x < )
+        for(x = 0; x < width; x++){
+            this.blocks[x] = [x]
+        }
     }
 }
