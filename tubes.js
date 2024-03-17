@@ -14,6 +14,8 @@ class Piece{
 
 box = ['░', "▒", '▓']
 
+debugger;
+
 /*
 pieces.push(new Piece("a",[[1, 11], [7, 13], [7], [8, 12]]))
 pieces.push(new Piece("l",[[2], [12], [11], [2]]))
