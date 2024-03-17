@@ -97,19 +97,17 @@ grid = {
     neighbours(x, y){
         n=[]
         
-        
+        /*
         y - 1 > -1 ? n.push(this.get(x, y-1)) : n.push(this.get(x, rows - 1));
         x + 1 < columns ? n.push(this.get(x+1, y)) : n.push(this.get(0, y));
         y + 1 < rows ? n.push(this.get(x, y+1)) : n.push(this.get(x, 0));
         x - 1 > -1 ? n.push(this.get(x-1, y)) : n.push(this.get(columns - 1, y));
-        
+        */
 
-        /*
         y - 1 > -1 ? n.push(this.get(x, y-1)) : n.push(undefined);
         x + 1 < columns ? n.push(this.get(x+1, y)) : n.push(undefined);
         y + 1 < rows ? n.push(this.get(x, y+1)) : n.push(undefined);
         x - 1 > -1 ? n.push(this.get(x-1, y)) : n.push(undefined);
-        */
 
         return n
     },
@@ -216,10 +214,7 @@ function start(){
     grid.draw();
 }
 
-
-
 start()
-
 
 function same(array1, array2){
     let array = []

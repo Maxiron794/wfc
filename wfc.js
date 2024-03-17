@@ -10,3 +10,25 @@ class Grid{
         }
     }
 }
+
+class Piece{
+
+}
+
+class Rules{
+    constructor(){
+        this.rules
+    }
+
+    add(id, connections){
+
+    }   
+    
+    static from_object(rules){
+        this.rules = rules;
+    }
+}
+
+const pieces = []
+
+learngrid = Grid.fromlist()
