@@ -12,23 +12,6 @@ class Piece{
     }
 }
 
-box = ['░', "▒", '▓']
-
-debugger;
-
-/*
-pieces.push(new Piece("a",[[1, 11], [7, 13], [7], [8, 12]]))
-pieces.push(new Piece("l",[[2], [12], [11], [2]]))
-pieces.push(new Piece("lu",[[7], [5, 1], [1], [7]]))
-pieces.push(new Piece("r",[[4], [4], [11], [13]]))
-pieces.push(new Piece("ru",[[8], [8], [3], [3, 6]]))
-pieces.push(new Piece("x",[[10], [4], [11], [2]]))
-pieces.push(new Piece("X",[[9], [6], [10], [5]]))
-pieces.push(new Piece("L",[[1], [2], [2], [1]]))
-pieces.push(new Piece("R",[[3], [3], [4], [4]]))*/
-
-
-
 pieces.push(new Piece("░",[[1, 11], [7, 13], [7, 8, 9], [8, 12]]))
 pieces.push(new Piece("▒",[[2], [12], [11], [2]]))
 pieces.push(new Piece("▒",[[7], [5, 1], [1], [7]]))
@@ -212,8 +195,8 @@ for(let x = 0; x < columns; x++){
 
 //grid.log()
 
-grid.set(columns/2, 1, "type", 8)
-grid.set(columns/2, 1, "possible", [8])
+// grid.set(columns/2, 1, "type", 8)
+// grid.set(columns/2, 1, "possible", [8])
 
 function cycle(){
     grid.count_entropy();
