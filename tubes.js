@@ -5,22 +5,22 @@ columns = 16;
 
 const pieces = []
 
-class Piece{
-    constructor(output, connections){
-        this.output = output;
-        this.connections = connections;
-    }
-}
+// class Piece{
+//     constructor(output, connections){
+//         this.output = output;
+//         this.connections = connections;
+//     }
+// }
 
-pieces.push(new Piece("░",[[1, 11], [7, 13], [7, 8, 9], [8, 12]]))
-pieces.push(new Piece("▒",[[2], [12], [11], [2]]))
-pieces.push(new Piece("▒",[[7], [5, 1], [1], [7]]))
-pieces.push(new Piece("▒",[[4], [4], [11], [13]]))
-pieces.push(new Piece("▒",[[8], [8], [3], [3, 6]]))
-pieces.push(new Piece("▒",[[10], [4], [11], [2]]))
-pieces.push(new Piece("▓",[[9], [6], [10], [5]]))
-pieces.push(new Piece("▓",[[1], [2], [2], [1]]))
-pieces.push(new Piece("▓",[[3], [3], [4], [4]]))
+pieces.push({"output":"░","connections":[[1, 11], [7, 13], [7, 8, 9], [8, 12]]})
+pieces.push({"output":"▒","connections":[[2], [12], [11], [2]]})
+pieces.push({"output":"▒","connections":[[7], [5, 1], [1], [7]]})
+pieces.push({"output":"▒","connections":[[4], [4], [11], [13]]})
+pieces.push({"output":"▒","connections":[[8], [8], [3], [3, 6]]})
+pieces.push({"output":"▒","connections":[[10], [4], [11], [2]]})
+pieces.push({"output":"▓","connections":[[9], [6], [10], [5]]})
+pieces.push({"output":"▓","connections":[[1], [2], [2], [1]]})
+pieces.push({"output":"▓","connections":[[3], [3], [4], [4]]})
 
 
 /*connections = {
