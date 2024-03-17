@@ -9,6 +9,12 @@ class Grid{
             this.blocks[x] = [x]
         }
     }
+
+    from_list(width, list){
+        for(i = 0; i < list.length; i++){
+            this.blocks[Math.floor(i / width)][i % width]
+        }
+    }
 }
 
 class Piece{
@@ -31,4 +37,13 @@ class Rules{
 
 const pieces = []
 
-learngrid = Grid.fromlist()
+blocks =  [
+    "0","0", "0", "0", "0", "0", "0",
+    "0", "0", "2", "6", "4", "0", "0",
+    "0", "2", "7", "5", "8", "4", "0",
+    "2", "7", "1", "0", "3", "8", "4",
+    "7", "1", "0", "0", "0","3", "8",
+    "1", "0", "0", "0", "0", "0", "3"
+]
+
+learngrid = Grid.fromlist(7, blocks)
