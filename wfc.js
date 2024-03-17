@@ -40,7 +40,7 @@ class Grid{
         return newgrid
     }
 
-    static learn(){
+    static learn(grid){
         let pieces = {}
         let rules = {}
 
