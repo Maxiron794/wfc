@@ -1,4 +1,4 @@
-class grid{
+class Grid{
     constructor(height, width, seed=Math.seed()){
         this.height = height;
         this.width = width;
